@@ -1,0 +1,148 @@
+{
+    "name": "Q4 Product Redesign",
+    "description": "Complete redesign of the customer-facing dashboard with improved UX, performance optimizations, and accessibility compliance.",
+    "status": "active",
+    "priority": "high",
+    "due_date": "2026-06-30",
+    "settings": {
+        "notifications": true,
+        "auto_assign": false
+    },
+    "task_groups": [
+        {
+            "name": "Design Phase",
+            "description": "UI/UX design and prototyping",
+            "sort_order": 0,
+            "color": "#8B5CF6",
+            "tasks": [
+                {
+                    "title": "User research & competitive analysis",
+                    "description": "Conduct interviews with 20 users and analyze top 5 competitor dashboards",
+                    "status": "in_progress",
+                    "priority": "high",
+                    "assigned_to": 1,
+                    "estimated_hours": 40,
+                    "due_date": "2026-04-15",
+                    "labels": [
+                        { "name": "research", "color": "#3B82F6" },
+                        { "name": "urgent", "color": "#EF4444" }
+                    ],
+                    "subtasks": [
+                        {
+                            "title": "Draft interview questionnaire",
+                            "status": "completed",
+                            "priority": "high",
+                            "assigned_to": 1,
+                            "estimated_hours": 4
+                        },
+                        {
+                            "title": "Schedule and conduct user interviews",
+                            "status": "in_progress",
+                            "priority": "medium",
+                            "assigned_to": 1,
+                            "estimated_hours": 20,
+                            "labels": [
+                                { "name": "research", "color": "#3B82F6" }
+                            ]
+                        },
+                        {
+                            "title": "Compile findings report",
+                            "status": "pending",
+                            "priority": "medium",
+                            "estimated_hours": 8
+                        }
+                    ]
+                },
+                {
+                    "title": "Create wireframes for new dashboard layout",
+                    "description": "Low-fidelity wireframes covering all 12 dashboard views",
+                    "status": "pending",
+                    "priority": "high",
+                    "estimated_hours": 24,
+                    "due_date": "2026-04-30",
+                    "labels": [
+                        { "name": "design", "color": "#8B5CF6" }
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "Development Sprint 1",
+            "description": "Core component library and layout system",
+            "sort_order": 1,
+            "color": "#10B981",
+            "tasks": [
+                {
+                    "title": "Build design system component library",
+                    "description": "Create reusable Vue components: Button, Card, Modal, Table, Form inputs with Storybook documentation",
+                    "status": "pending",
+                    "priority": "critical",
+                    "assigned_to": 1,
+                    "estimated_hours": 60,
+                    "due_date": "2026-05-15",
+                    "labels": [
+                        { "name": "frontend", "color": "#F59E0B" },
+                        { "name": "feature", "color": "#10B981" }
+                    ],
+                    "subtasks": [
+                        {
+                            "title": "Set up Storybook environment",
+                            "priority": "high",
+                            "estimated_hours": 4
+                        },
+                        {
+                            "title": "Implement Button component with variants",
+                            "priority": "medium",
+                            "estimated_hours": 8
+                        },
+                        {
+                            "title": "Implement DataTable component with sorting & pagination",
+                            "priority": "high",
+                            "estimated_hours": 16,
+                            "labels": [
+                                { "name": "feature", "color": "#10B981" }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "title": "Implement responsive grid layout system",
+                    "status": "pending",
+                    "priority": "high",
+                    "estimated_hours": 16,
+                    "labels": [
+                        { "name": "frontend", "color": "#F59E0B" }
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "Testing & QA",
+            "description": "Quality assurance and cross-browser testing",
+            "sort_order": 2,
+            "color": "#F59E0B",
+            "tasks": [
+                {
+                    "title": "Write E2E tests for critical user flows",
+                    "status": "pending",
+                    "priority": "high",
+                    "estimated_hours": 32,
+                    "labels": [
+                        { "name": "testing", "color": "#6366F1" }
+                    ]
+                },
+                {
+                    "title": "Accessibility audit (WCAG 2.1 AA)",
+                    "description": "Ensure all dashboard components meet WCAG 2.1 AA compliance standards",
+                    "status": "pending",
+                    "priority": "medium",
+                    "estimated_hours": 16,
+                    "labels": [
+                        { "name": "testing", "color": "#6366F1" },
+                        { "name": "enhancement", "color": "#EC4899" }
+                    ]
+                }
+            ]
+        }
+    ]
+}
